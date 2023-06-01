@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Comprovante de Consulta</title>
+
+    <style>
+      html {
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+        background-color: #151c24;
+      }
+
+      body {
+        padding: 4em;
+      }
+
+      h1 {
+        margin: 0 !important;
+        color: white;
+        font-size: 2rem;
+      }
+
+      p {
+        color: #637381;
+        font-size: 1.1rem;
+        margin: 1em;
+      }
+
+      .row {
+        display: flex;
+        justify-content: center;
+      }
+
+      .col {
+        flex: 1;
+        text-align: center;
+      }
+
+      .card {
+        border-radius: 15px;
+        background: #202b36;
+        padding: 1.6em;
+        margin: 2rem;
+      }
+
+      .card.alert {
+        padding: 1em;
+        background: #f3712a;
+      }
+
+      .alert p {
+        color: #ffffff;
+        opacity: 0.8;
+        margin: 0;
+      }
+
+      .section-numbers {
+        justify-content: space-between;
+      }
+
+      .section-numbers .counter {
+        margin: 0;
+        color: white;
+        font-size: 4rem;
+        font-style: normal;
+        font-weight: 100;
+      }
+
+      .section-receipt {
+        margin: 2em;
+      }
+
+      .section-receipt .col {
+        text-align: start;
+      }
+
+      .bold {
+        font-weight: 600;
+        margin: 0.4em;
+      }
+
+      .blurry-gradient {
+        position: absolute;
+        top: -50%;
+        left: 2%;
+        transform: translate(-50%, 0%);
+        width: 800px;
+        height: 800px;
+        border-radius: 50% 22% 40% 80%;
+        filter: blur(100px);
+        background: radial-gradient(
+          circle at 50% 56%,
+          #f3712a,
+          rgba(76, 0, 255, 0)
+        );
+        opacity: 0.2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col" style="align-self: center">
+        <img style="max-width: 14vw" src="./uqualify-logo-branco.png" />
+      </div>
+      <div class="col">
+        <h1>Análise Reputacional</h1>
+        <p>Consulta realizada 23/04/2023 13:45</p>
+      </div>
+      <div class="col" style="align-self: center">
+        <img style="max-width: 13vw" src="./str-logo.png" />
+      </div>
+    </div>
+    <div class="section-numbers row">
+      <div class="col">
+        <div class="card">
+          <p class="bold">Notícias Encontradas</p>
+          <p class="counter">150</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <p class="bold">Notícias Negativas</p>
+          <p class="counter">68</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <p class="bold">Mídias de Sócios</p>
+          <p class="counter">36</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <p class="bold">Mídias Negativas de Sócios</p>
+          <p class="counter">23</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col" style="text-align: start">
+        <div class="card alert">
+          <p class="bold">Atenção!</p>
+          <p style="padding-top: 0.5em">
+            Existem 91 notícias negativas que foram classificadas como negativas
+            relacionadas a empresa e aos sócios identificados, verifique se a
+            notícia pode impactar a homologação desta empresa.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-receipt row" style="flex-direction: column">
+      <div class="col">
+        <h1>Empresa LTDA</h1>
+        <p style="margin: 0.5em 0">00.000.000/0000-00</p>
+        <div class="card" style="margin: 2em 0; padding: 1.6em">
+          <h1 style="font-weight: 100">Portal de Notícias</h1>
+          <p style="margin: 0.5em 0">24/05/2022 - Google News</p>
+
+          <p style="margin: 1.4em 0 0.5em; color: white; opacity: 0.8">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </p>
+        </div>
+      </div>
+
+      <div class="col">
+        <h1>João Silva</h1>
+        <div class="card" style="margin: 2em 0; padding: 1.6em">
+          <h1 style="font-weight: 100">Portal de Notícias</h1>
+          <p style="margin: 0.5em 0">24/05/2022 - Google</p>
+
+          <p style="margin: 1.4em 0 0.5em; color: white; opacity: 0.8">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="blurry-gradient"></div>
+  </body>
+</html>
