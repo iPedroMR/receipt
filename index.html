@@ -37,8 +37,13 @@
         margin: 1em;
       }
 
+      header img {
+        width: 12em;
+      }
+
       .row {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
       }
 
@@ -106,21 +111,37 @@
         );
         opacity: 0.2;
       }
+
+      @media only screen and (max-width: 780px) {
+        header img {
+          display: none;
+        }
+        .col {
+          flex: 0 0 100% !important;
+        }
+        body {
+          padding: 2em;
+        }
+        .blurry-gradient {
+          top: -80% !important;
+          left: -40% !important;
+        }
+      }
     </style>
   </head>
   <body>
-    <div class="row">
+    <header class="row">
       <div class="col" style="align-self: center">
-        <img style="max-width: 14vw" src="./uqualify-logo-branco.png" />
+        <img src="./uqualify-logo-branco.png" />
       </div>
       <div class="col">
         <h1>Análise Reputacional</h1>
         <p>Consulta realizada 23/04/2023 13:45</p>
       </div>
       <div class="col" style="align-self: center">
-        <img style="max-width: 13vw" src="./str-logo.png" />
+        <img src="./str-logo.png" />
       </div>
-    </div>
+    </header>
     <div class="section-numbers row">
       <div class="col">
         <div class="card">
